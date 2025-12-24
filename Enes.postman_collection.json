@@ -1,0 +1,609 @@
+{
+	"info": {
+		"_postman_id": "f0821fd5-b8fe-4ae5-9b21-eaa55d72a1d3",
+		"name": "Enes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50537533",
+		"_collection_link": "https://enesmidesem-104768.postman.co/workspace/enes's-Workspace~77638c8b-3624-4f9a-83fa-07c91ad18d38/collection/50537533-f0821fd5-b8fe-4ae5-9b21-eaa55d72a1d3?action=share&source=collection_link&creator=50537533"
+	},
+	"item": [
+		{
+			"name": "Add Venue",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Bilgisayar Mühendisliği",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Sdü Batı Kampüsü",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "35",
+							"type": "text"
+						},
+						{
+							"key": "days1",
+							"value": "Pazartesi-Cuma",
+							"type": "text"
+						},
+						{
+							"key": "open1",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "close1",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "isClosed1",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "open2",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "close2",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "isClosed2",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "days2",
+							"value": "Cumartesi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Mehmet",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Kahveler güzel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues/{{venueid}}/comments",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						"{{venueid}}",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Venue",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "b",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "b",
+							"type": "text"
+						},
+						{
+							"key": "foodanddrink",
+							"value": "b",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "day1",
+							"value": "b",
+							"type": "text"
+						},
+						{
+							"key": "open1",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "close1",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "isClosed1",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "day2",
+							"value": "b",
+							"type": "text"
+						},
+						{
+							"key": "open2",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "close2",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "isClosed2",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues/{{venueid}}",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						"{{venueid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Sinan",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Kahveler çok kötü",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues/{{venueid}}/comments/{{commentid}}",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						"{{venueid}}",
+						"comments",
+						"{{commentid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Venue",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues/{{venueid}}",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						"{{venueid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues/{{venueid}}/comments/{{commentid}}",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						"{{venueid}}",
+						"comments",
+						"{{commentid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Nearly Venues",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app/api/venues/?lat=1&long=1",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						""
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "1"
+						},
+						{
+							"key": "long",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues/{{venueid}}/comments/{{commentid}}",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						"{{venueid}}",
+						"comments",
+						"{{commentid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Venue",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5NjU1NywiZXhwIjoxNzY2NjAwMTU3fQ.EvRRWm1QbQPHq1ZgNq5-YtChpO5z54QnHFrpaImTEoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/venues/{{venueid}}",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"venues",
+						"{{venueid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "enes3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "enes3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "enes3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app/api/signup",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTRjMDkzM2ViNzUzMWU3YWY4NGU4YzUiLCJlbWFpbCI6ImFzeTEiLCJuYW1lIjoiYXN5MSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NjU5MTQ2MSwiZXhwIjoxNzY2NTk1MDYxfQ._1A0aoxkXX0P1beHAI-iEPBeHEA-_cyjGn1O5eVz70k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "asy1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asy1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mekanbul-backend-seven-self.vercel.app//api/login",
+					"protocol": "https",
+					"host": [
+						"mekanbul-backend-seven-self",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
