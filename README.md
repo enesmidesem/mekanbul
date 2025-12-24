@@ -95,13 +95,13 @@ mekanbul/
 ![Get Venue](https://github.com/user-attachments/assets/0bcc8295-a1aa-461b-af68-cf072ee13a39)
 
 ### 8. Get Comment - Belirli Yorumu Getirme
-![Get Comment]("https://github.com/user-attachments/assets/7967b1d5-974f-4c82-b93e-940b268b0fb8)
+![Get Comment](https://github.com/user-attachments/assets/643fa620-f46a-4b4c-ab04-6e8e70094f61)
 
 ### 9. List Nearly Venues - Yakındaki Mekanları Listeleme
 ![List Nearly Venues](https://github.com/user-attachments/assets/493773fa-5384-478c-9ae3-834633a00eab)
 
 ### 10. Delete Comment - Yorum Silme
-![Delete Comment](https://github.com/user-attachments/assets/a0bbebc1-c535-4b52-b6a6-ccdf23b71017)
+![Delete Comment](https://github.com/user-attachments/assets/5170ceaf-b6be-407d-8061-306d83603f78)
 
 ### 11. Delete Venue - Mekan Silme 
 ![Delete Venue](https://github.com/user-attachments/assets/41dfcd20-0dd1-427a-8197-4ff51de7b88f)
