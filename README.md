@@ -5,7 +5,7 @@ MERN Stack (MongoDB, Express.js, React, Node.js) teknolojileri ile geliştirilmi
 ## 🌐 Canlı Adresler
 
 - **Frontend:** https://mekanbul-frontend-delta.vercel.app/
-- **Backend API:** https://mekanbul-backend-seven-self.vercel.app/
+- **Backend:** https://mekanbul-backend-seven-self.vercel.app/
 
 ## 📝 Proje Hakkında
 
